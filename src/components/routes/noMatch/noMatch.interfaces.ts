@@ -1,3 +1,3 @@
-import { WithNamespaces } from 'react-i18next';
+import { WithTranslation } from 'react-i18next';
 
-export type Props = WithNamespaces;
+export type Props = WithTranslation;

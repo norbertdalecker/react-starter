@@ -31,8 +31,7 @@ module.exports = merge(common, {
     ]
   },
   plugins: [
-    new CleanWebpackPlugin([paths.buildFolderName], {
-      root: getAppRootPath().path,
+    new CleanWebpackPlugin( {
       verbose: false
     }),
     new MiniCssExtractPlugin({

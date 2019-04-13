@@ -1,14 +1,13 @@
 import { History } from 'history';
-import React from 'react';
+import React, { Suspense } from 'react';
 import { hot } from 'react-hot-loader';
-import { I18nextProvider } from 'react-i18next';
 import { Provider as ReduxProvider } from 'react-redux';
 import { Store } from 'redux';
 
 import { App } from 'components/app';
 import { AppState } from '../store';
 
-import i18n from './i18n';
+import './i18n';
 
 interface Props {
   history: History;
@@ -16,11 +15,11 @@ interface Props {
 }
 
 const Main: React.SFC<Props> = props => (
-  <I18nextProvider i18n={i18n}>
-    <ReduxProvider store={props.store}>
-      <App history={props.history} />
-    </ReduxProvider>
-  </I18nextProvider>
+    <Suspense fallback="loading">
+      <ReduxProvider store={props.store}>
+        <App history={props.history} />
+      </ReduxProvider>
+    </Suspense>
 );
 
 export default hot(module)(Main);

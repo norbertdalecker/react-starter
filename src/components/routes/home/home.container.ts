@@ -1,4 +1,4 @@
-import { withNamespaces } from 'react-i18next';
+import { withTranslation } from 'react-i18next';
 import { connect } from 'react-redux';
 import { Dispatch } from 'redux';
 import { AppState, selectors } from '../../../store';
@@ -19,4 +19,4 @@ export const mapDispatchToProps = (dispatch: Dispatch) => ({
 export default connect<StoreProps, DispatchProps>(
   mapStateToProps,
   mapDispatchToProps,
-)(withNamespaces(['common'])(Home));
+)(withTranslation(['common'])(Home));
