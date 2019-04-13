@@ -1,0 +1,7 @@
+{
+  "name": "",
+  "short_name": "",
+  "description": "",
+  "start_url": "./?manifest=true",
+  "display": "standalone"
+}

@@ -1,0 +1,9 @@
+@import 'vars';
+
+* {
+  box-sizing: border-box;
+}
+
+::placeholder {
+  color: gray;
+}
