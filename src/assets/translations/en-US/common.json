@@ -1,1 +1,5 @@
-{}
+{
+    "common": {
+        "page_header": "hello header"
+    }
+}

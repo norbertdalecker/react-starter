@@ -7,7 +7,7 @@ module.exports = {
       {
         modules: false,
         useBuiltIns: 'entry',
-        corejs: 2,
+        corejs: 3,
         targets: {
           browsers: ['last 2 versions', 'ie >= 11']
         }

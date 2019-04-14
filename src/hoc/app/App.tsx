@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Router } from 'components/modules';
-import { mainRedirects, mainRoutes } from 'components/routes';
+import { mainRedirects, mainRoutes } from 'hoc/routes';
+import { Router } from 'modules';
 
 import { Props } from './app.interfaces';
 

@@ -1,6 +1,6 @@
 import { History } from 'history';
 
-import { Redirect, Route } from 'components/modules/router/switch';
+import { Redirect, Route } from 'modules/router/switch';
 
 export interface PublicProps {
   routes?: Route[];

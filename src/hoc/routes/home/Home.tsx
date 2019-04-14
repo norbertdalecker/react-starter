@@ -24,7 +24,7 @@ export default class Home extends React.PureComponent<Props> {
     return (
       <div>
         <h1>
-          {t('Page Hader')}
+          {t('common.page_header')}
         </h1>
         {this.getHello().map((hello: Hello, index: number) => {
           return (<span key={index}>{hello.message}</span>);
